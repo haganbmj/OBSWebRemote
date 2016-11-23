@@ -1,0 +1,13 @@
+<form ng-submit='connect()' ng-controller='ConnectController'>
+  <div class='row'>
+    <div class='one-third column'>
+      <input class='u-full-width' placeholder='{{ "ADDRESS" | translate }}' ng-model='address' name='address' type='text'></input>
+    </div>
+    <div class='one-third column'>
+      <input class='u-full-width' placeholder='{{ "PASSWORD" | translate }}' ng-model='password' name='password' type='password'></input>
+    </div>
+    <div class='one-third column'>
+      <input class='button-primary' type='submit' value='{{ "CONNECT" | translate }}'></input>
+    </div>
+  </div>
+</form>

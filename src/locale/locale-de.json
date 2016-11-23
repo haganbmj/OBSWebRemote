@@ -1,0 +1,11 @@
+{
+  "ADDRESS": "Adresse",
+  "PASSWORD": "Passwort",
+  "CONNECT": "Anschließen",
+  "SUBMIT": "Einreichen",
+  "STREAMING": "Streaming",
+  "SCENE": "Szene",
+  "SCENES": "Szenen",
+  "SOURCES": "Quellen",
+  "DROPPED_FRAMES": "Verworfene Frames"
+}

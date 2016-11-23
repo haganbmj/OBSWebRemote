@@ -1,0 +1,10 @@
+<ul class='source-list'>
+  <h5 class='header'>{{ 'SOURCES' | translate }}</h5>
+  <li ng-repeat='source in data.activeScene.sources' class='source'>
+    <div class='name'>name: {{ source.name }}</div>
+    <div class='type'>type: {{ source.type }}</div>
+    <div class='volume'>volume: {{ source.volume }}</div>
+    <div class='visible'>visible: {{ source.visible }}</div>
+  </li>
+  <li class='empty-list' ng-hide='data.activeScene.sources.length'>{{ 'NO_SOURCES' | translate }}</li>
+</ul>

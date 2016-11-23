@@ -1,0 +1,29 @@
+#sidebar-scenes {
+  ul {
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    overflow-y: auto;
+
+    li {
+      padding: 0.5em;
+      text-overflow: ellipsis;
+    }
+
+    .header {
+
+    }
+  }
+
+  #scene-list {
+    min-height: 3em;
+  }
+
+  #source-list {
+    min-height: 5em;
+  }
+
+  .scene.active {
+    color: red;
+  }
+}

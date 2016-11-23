@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "removeComments": true,
+    "target": "ES5",
+    "allowJs": false,
+    "outFile": "build/public/js/obs-web-remote.js"
+  },
+  "compileOnSave": false,
+  "exclude": [
+    "node_modules/",
+    "build/"
+  ]
+}

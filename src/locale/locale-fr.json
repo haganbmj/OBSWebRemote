@@ -1,0 +1,20 @@
+{
+  "OK": "Ok",
+  "CANCEL": "Annuler",
+  "CLOSE": "Fermer",
+  "ADD": "Ajouter",
+  "REMOVE": "Supprimer",
+  "RENAME": "Renommer",
+  "MOVE_UP": "Déplacer vers le haut",
+  "MOVE_DOWN": "Déplacer vers le bas",
+  "STREAMING": "Streaming",
+  "START_STREAMING": "Commencer le streaming",
+  "STOP_STREAMING": "Arrêter le streaming",
+  "RECORDING": "Enregistrement",
+  "START_RECORDING": "Démarrer l'enregistrement",
+  "STOP_RECORDING": "Arrêter l'enregistrement",
+  "SCENE": "Scène",
+  "SCENES": "Scènes",
+  "SOURCES": "Sources",
+  "DROPPED_FRAMES": "Images perdues"
+}

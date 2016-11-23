@@ -1,0 +1,11 @@
+{
+  "ADDRESS": "Dirección",
+  "PASSWORD": "Contraseña",
+  "CONNECT": "Conectar",
+  "SUBMIT": "Enviar",
+  "STREAMING": "Transmisión",
+  "SCENE": "Escena",
+  "SCENES": "Escenas",
+  "SOURCES": "Fuentes",
+  "DROPPED_FRAMES": "Fotogramas Perdidos"
+}

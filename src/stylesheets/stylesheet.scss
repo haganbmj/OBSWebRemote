@@ -1,0 +1,94 @@
+/* Override some Skeleton assignments */
+blockquote, dl, figure, form, ol, p, pre, table, ul, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.flex {
+  width: auto;
+  max-width: 1280px;
+  height: 100%;
+
+  display: flex;
+  flex-flow: column;
+}
+
+.flex .header {
+  flex: 0 1 auto;
+  background-color: #f3f5f7;
+
+  form, select {
+    display: inline-block;
+    margin-top: 1em;
+  }
+
+  .left-nav {
+    padding-left: 2em;
+  }
+
+  .right-nav {
+    padding-right: 2em;
+  }
+}
+
+.flex .content {
+  flex: 1 1 auto;
+}
+
+.flex .footer {
+  flex: 0 1 auto;
+  background-color: #f3f5f7;
+}
+
+.button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+  font-weight: 200;
+}
+
+.empty-list {
+  font-style: italic;
+  text-align: center;
+}
+
+#status_overlay {
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  z-index: 100;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.warning {
+  background: rgba(125, 0, 0, 0.9);
+  color: white;
+}
+
+#sidebar-scenes {
+  height: 100%;
+
+  h5.header {
+    width: 100%;
+    text-align: center;
+  }
+
+  ul {
+    li {
+      margin-bottom: 0;
+
+      &:hover {
+        transition: background-color .1s;
+      }
+    }
+  }
+}
+
+@import 'partials/scene-list';

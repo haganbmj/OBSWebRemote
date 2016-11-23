@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app='app' ng-controller='UIController'>
+  <head>
+    <meta content='text/html;charset=utf-8' http-equiv='Content-Type'>
+    <meta content='utf-8' http-equiv='encoding'>
+
+    <title>OBS Web Remote</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.13.0/angular-translate.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-translate-loader-static-files/2.10.0/angular-translate-loader-static-files.js'></script>
+    <script src='assets/js/themer.js'></script>
+    <script src='assets/js/obs-websocket.js'></script>
+    <script src='js/obs-web-remote.js'></script>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css' />
+    <link rel='stylesheet' href='css/stylesheet.css' />
+    <link themer-link>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  </head>
+  <body>
+    <div class='flex container'>
+      <div class='header'>
+        <div class='u-pull-left left-nav'>
+          @@include('./partials/connect.html')
+        </div>
+
+        <div class='u-pull-right right-nav'>
+          <div class='row'>
+            <div class='one-half column'>
+              <div class='u-pull-right' themer-switcher></div>
+            </div>
+            <div class='one-half column'>
+              @@include('./partials/translate.html')
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id='status_overlay'
+        class='warning'
+        ng-show='data.obs.message != null'
+        ng-click='data.obs.message = null'>
+        <h4>{{ data.obs.message | translate }}</h4>
+      </div>
+
+      <div class='content'>
+        <div class='row'>
+          <div class='four columns' id='sidebar-scenes'>
+            <div id='scene-list'>
+              @@include('./partials/scene-list.html')
+            </div>
+            <div id='source-list'>
+              @@include('./partials/source-list.html')
+            </div>
+            <div id='transition-list'>
+              @@include('./partials/transition-list.html')
+            </div>
+          </div>
+
+          <div class='four columns' id='twitch-control'>
+            <p>Twitch API Access?</p>
+          </div>
+
+          <div class='four-columns' id='twitch-chat'>
+            <p>Toggleable Twitch Chat?</p>
+          </div>
+        </div>
+
+        <p style='margin-top: 20px;'>{{ data | json }}</p>
+      </div>
+
+      <div class='footer'>
+        <div class='u-pull-left left-footer'>
+          Audio shit
+        </div>
+
+        <div class='u-pull-right right-footer'>
+          @@include('./partials/status.html')
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

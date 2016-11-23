@@ -1,0 +1,6 @@
+<div>{{ data.streamStatus.streaming ? 'STREAMING' : 'NOT_STREAMING' | translate }}</div>
+<div>{{ data.streamStatus.recording ? 'RECORDING' : 'NOT_RECORDING' | translate }}</div>
+<div>Stream Time: {{ data.streamStatus.totalStreamTime | secondsToTime }}</div>
+<div>Kb/s: {{ data.streamStatus['kbits-per-sec'] | number }}
+<div>Total Frames: {{ data.streamStatus.numberOfFrames | number }}</div>
+<div>Dropped Frames: {{ data.streamStatus.numberOfDroppedFrames | number }}</div>

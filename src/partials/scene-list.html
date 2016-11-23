@@ -1,0 +1,12 @@
+<ul>
+  <h5 class='header'>{{ 'SCENES' | translate }}</h5>
+  <li
+    ng-repeat='scene in data.sceneList'
+    ng-click='changeScene(scene.name)'
+    ng-class='isActiveScene(scene) ? "active" : ""'
+    class='scene'>
+
+    <div class='name'>{{ scene.name }}</div>
+  </li>
+  <li class='empty-list' ng-hide='data.sceneList.length'>{{ 'NO_SCENES' | translate }}</li>
+</ul>
